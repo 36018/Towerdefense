@@ -21,10 +21,11 @@ public class Waypoints : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        while (waypoints.Length > 0 / < 11)
+        /*while (waypoints.Length > 0 / < 11)
         {
             enemy.transform.position += Vector3.MoveTowards(waypoints[]);
         }
+        */
     }
 
     //Sla Waypoints op in een Array:
