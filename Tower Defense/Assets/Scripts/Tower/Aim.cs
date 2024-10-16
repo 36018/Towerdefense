@@ -5,14 +5,16 @@ using UnityEngine.UIElements;
 
 public class Aim : MonoBehaviour
 {
-    [SerializeField] Bullet bullet;
-    Vector3 mousePosition;
-    float angle = 0;
+    [SerializeField]private Bullet bullet;
+    private Vector3 mousePosition;
+    private float angle = 0;
 
     // Start is called before the first frame update
     void Start()
     {
+        angle = bullet.Angle;
 
+        
         
     }
 
@@ -34,7 +36,7 @@ public class Aim : MonoBehaviour
             //Debug.Log(differenceVector);
 
             Bullet copybullet = Instantiate(bullet, transform.position, Quaternion.identity);
-            copybullet.angle = angle;
+            copybullet.Angle = angle;
         }
     }
 }

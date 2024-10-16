@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EndPup : MonoBehaviour
 {
-    public float maxHealth = 1000;
+    private float maxHealth = 1000;
     private float currentHealth;
 
     // Start is called before the first frame update

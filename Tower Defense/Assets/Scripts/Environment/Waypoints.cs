@@ -5,11 +5,11 @@ using static UnityEngine.GraphicsBuffer;
 
 public class Waypoints : MonoBehaviour
 {
-    public Transform[] waypoints;
+    [SerializeField] private Transform[] waypoints;
     private Vector3 targetposition = Vector3.zero;
     [SerializeField]
     private int waypointIndex = 0;
-    public GameObject enemy;
+    private GameObject enemy;
     [SerializeField]
     private float speed = 20f;
     // Start is called before the first frame update

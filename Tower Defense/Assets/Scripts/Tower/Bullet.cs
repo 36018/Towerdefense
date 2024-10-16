@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float angle = 45;
-    Vector3 velocity;
-    Vector3 direction;
-    float speed = 15f;
+    private float angle = 45;
+    private Vector3 velocity;
+    private Vector3 direction;
+    private float speed = 15f;
+    public int damage = 50;
+
+    public float Angle {
+        get { return angle; }
+        set { angle = value; }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
