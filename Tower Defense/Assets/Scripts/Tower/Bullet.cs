@@ -8,11 +8,17 @@ public class Bullet : MonoBehaviour
     private Vector3 velocity;
     private Vector3 direction;
     private float speed = 15f;
-    public int damage = 50;
+    private float damage = 50;
 
     public float Angle {
         get { return angle; }
         set { angle = value; }
+    }
+
+    public float Damage
+    {
+        get { return damage; }
+        set { damage = value; }
     }
 
     // Start is called before the first frame update
