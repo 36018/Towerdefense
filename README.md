@@ -26,10 +26,19 @@ Maar als de enemy bij de rechter hondje komt dan heb je verloren.
 Plaats hier minimaal 1 link naar scripts die voldoen aan de eisen van **"Don't Repeat Yourself (DRY)"** en **"Single Responsibility Principle"**.
 Omschrijf hier waarom jij denkt dat je in die scripts aan deze eisen voldoet.
 
-Bijvoorbeeld:
+[Aim script](https://github.com/36018/Towerdefense/blob/main/Tower%20Defense/Assets/Scripts/Tower/Aim.cs)"
 
-*"In dit script heb ik een array gebruikt voor al mijn vijanden die in de nieuwe wave worden gespawnd. Hierdoor heb ik mijzelf niet hoeven herhalen **(DRY)** in de code omdat ik met 1 regel alle enemies kan plaatsen via en for each loop.
-[link naar script](/MyTowerDefenseGame/Assets/Scripts/JustAScript.cs)"*
+[Bullet script](https://github.com/36018/Towerdefense/blob/main/Tower%20Defense/Assets/Scripts/Tower/Bullet.cs)"
+
+De bovenstaande linken zijn de enige scripts die aan Dry SRP voldoen. Er staan geen functies die in een aparte script moeten/kunnen.
+
+
+[Enemy script](https://github.com/36018/Towerdefense/blob/main/Tower%20Defense/Assets/Scripts/Enemy/Enemy.cs)"
+
+Bovenstaande link is *bijna* Dry SRP. 
+Dit zou dan zijn als ik de TakeDamage en Die in een aparte script zou zetten. 
+Op die manier zou ik Die en TakeDamage niet herhalen voor bijvoorbeeld de Towers of nog andere Enemy's.
+
 
 ## Product 2: "Projectmappen op GitHub"
 
@@ -52,7 +61,7 @@ Maar als er bijvoorbeeld meerdere towers waren dan hadden er nog folders in towe
 
 Je maakt in Unity een stabiele “build” van je game waarbij bugs en logs eerst zijn verwijderd. Deze buildfiles upload je in je repository onder releases.  Bij eventuele afwijkingen moeten deze worden gedocumenteerd in de release. (Bijv controller nodig of spelen via netwerk etc..) 
 
-[Release Voorbeeld](https://github.com/erwinhenraat/TowerDefenseTemplate/releases)
+[Laatste Release](https://github.com/36018/Towerdefense/releases/tag/Towerdefense)
 
 ## Product 4: Game met Sprites(animations) en Textures 
 
@@ -70,7 +79,7 @@ Als ik meer tijd had had ik graag effecten toegevoegd.
 
 //Zodra je bugs tegenkomt maak je een issue aan op github. In de issue omschrijf je het probleem en je gaat proberen via breakpoints te achterhalen wat het probleem is. Je maakt screenshot(s) van het debuggen op het moment dat je via de debugger console ziet wat er mis is. Deze screenshots met daarbij uitleg over het probleem en de bijhorende oplossing post je in het bijhorende github issue. 
 
-[Link naar issues](https://github.com/36018/Towerdefense/issues)
+[Link naar issues](https://github.com/36018/Towerdefense/issues?q=is%3Aissue+is%3Aclosed)
 
 ## Product 6: Game design met onderbouwing 
 
